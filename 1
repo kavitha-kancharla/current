@@ -1,0 +1,34 @@
+<!doctype HTML>
+<head>
+<title>current</title>
+</head>
+<body>
+<label id="name">Name</label>
+<input type="text"><br><br>
+<label >No.Of.units</label>
+<input type="number" id="units">
+<br><br>
+<label >no.of charges</label>
+<select id="charge">
+<option value="5">city</option>
+<option value="2">village</option>
+</select>
+<br><br>
+<button onclick="total()">calculate</button>
+<label id="out"></label>
+<script>
+   function total(){
+            var name,units,charge;
+             name=document.getElementById("name").value;
+             units=document.getElementById("units").value;
+             charge=document.getElementById("charge").value;
+
+    
+ var calculate=units*charge;
+ document.getElementById("out").innerHTML=calculate;
+}
+</script>
+
+
+
+</body>
